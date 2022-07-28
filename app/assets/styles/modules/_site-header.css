@@ -6,15 +6,15 @@
     transition: background-color .3s ease-out;
 
     &--is-expanded {
-        background-color: rgba(47, 85, 114, .5);
+        background-color: rgba(39, 89, 95, .5);
     }
 
     @mixin atMedium {
         position: fixed;
-        background-color: rgba(47, 85, 114, .3);
+        background-color: rgba(39, 89, 95, .3);
 
         &--dark {
-            background-color: rgba(23, 51, 72, .85);
+            background-color: rgba(32, 79, 85, .85);
         }
     }
 
@@ -25,10 +25,11 @@
     }
 
     &__logo {
-    /* this position makes sure that the width of the blue transparent bar is determined by the navigation + button size, not the logo size*/
+        /* this position makes sure that the width of the blue transparent bar is determined by the navigation + button size, not the logo size*/
         position: absolute;
         top: 0;
         left: 50%;
+        border-radius: 0px 0px 5px 5px;
         transition: transform .3s ease-out;
         transform: translateX(-50%) scale(.8);
         transform-origin: 50% 0;
@@ -38,12 +39,12 @@
         @mixin atMedium {
             left: auto;
             transform: translateX(0);
-        
+
             .site-header--dark & {
                 transform: scale(0.54);
             }
         }
-    } 
+    }
 
     &__menu-icon {
         width: 20px;
@@ -64,7 +65,7 @@
             transform-origin: 0 0;
             transition: transform .3s ease-out;
         }
-        
+
         &__middle {
             position: absolute;
             top: 8px;
@@ -87,11 +88,11 @@
             transform-origin: 0 100%;
             transition: transform .3s ease-out;
         }
-    
+
         @mixin atMedium {
-          display: none;
+            display: none;
         }
-      }
+    }
 
     &__menu-icon--close-x {
 

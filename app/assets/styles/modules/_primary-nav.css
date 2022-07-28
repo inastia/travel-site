@@ -1,6 +1,6 @@
 .primary-nav {
     padding-top: 10px;
-    
+
     @mixin atMedium {
         padding-top: 0;
     }
@@ -43,8 +43,8 @@
             background-color: transparent;
 
             &.is-current-link {
-                color: #fabb69;
-              }
+                color: #DEA164;
+            }
         }
     }
 }
